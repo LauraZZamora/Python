@@ -11,7 +11,35 @@ def funcion(x):
 print(funcion(3)) ## y en print se le paso el valor de x
 
 
-##  RADIO CIRCULO ###
+def informacion(nombre, puesto = 'Paramtro por defecto -> Desconocido'):
+    print(f'Soy {nombre} y soy {puesto}')
+    return nombre
+informacion('Laura','Desarrolladora')
+informacion('Tatiana','Ingeniera')
+informacion('Juan')
+
+empleado = informacion('Pablo')
+print (empleado)
+
+
+def datos(nombre):
+    return nombre
+
+empleado2 = datos('Lola')
+print(empleado2)
+
+
+nombre2 = 'Pedro'
+def mostrar_nombre(nombre2):
+    print(f'Hola {nombre2}')
+
+mostrar_nombre(nombre2.upper())
+print( nombre2.upper() ) ### Mayusculas
+print( nombre2.title() ) ### Primera mayuscula
+
+
+
+##  RADIO CIRCULO ##################
 
 
 def Area_Circulo(radio):
@@ -48,8 +76,11 @@ dada por la expresi´on Ar = l ∗ a'''
 
 largo= float(input("Largo del rectangulo: "))
 ancho= float(input("Ancho del rectangulo: "))
+
 def Area_Rectangulo(l,a):
     area=l*a
     return area
 print("El area del rectangulo es:", end =" ") ## Para que el resultado me quede al lado y no de para abajo
 print(Area_Rectangulo(largo,ancho))
+
+
